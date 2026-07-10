@@ -65,10 +65,10 @@ fi
 echo
 echo "========== SECURITY SUMMARY =========="
 
-echo "✓ SSH Service Running"
-echo "✓ Firewall Configured"
-echo "✓ Fail2Ban Enabled"
-echo "✓ auditd Enabled"
+echo "Check SSH Service Running"
+echo "Check Firewall Configured"
+echo "Check Fail2Ban Enabled"
+echo "Check auditd Enabled"
 
 echo
 echo "Enterprise Health Check Completed Successfully."

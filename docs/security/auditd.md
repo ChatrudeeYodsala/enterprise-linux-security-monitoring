@@ -10,9 +10,9 @@ Deploy Linux Audit Framework to monitor and record security-related events on an
 - auditd
 - augenrules
 
-## Security Monitoring
+## Audit Rules
 
-Configured audit rules for monitoring:
+Configured audit rules to monitor modifications of:
 
 - /etc/passwd
 - /etc/group
@@ -30,3 +30,7 @@ Configured audit rules for monitoring:
 ## Result
 
 The Linux Audit Framework is operational and capable of monitoring critical security configuration changes.
+
+## Lessons Learned
+
+Linux Audit Framework provides detailed visibility into critical system changes and supports post-event investigation.

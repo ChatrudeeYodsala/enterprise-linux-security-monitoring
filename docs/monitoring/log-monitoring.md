@@ -12,6 +12,12 @@ Monitor and analyze Linux system and security logs to detect operational and sec
 - User Management Events
 - System Boot Logs
 
+## Monitoring Tools
+
+- journalctl
+- ausearch
+- systemctl
+
 ## Verification
 
 - SSH logs reviewed
@@ -23,3 +29,7 @@ Monitor and analyze Linux system and security logs to detect operational and sec
 ## Result
 
 Successfully monitored Linux system and security events using journalctl and auditd.
+
+## Lessons Learned
+
+Monitoring authentication and audit logs improves visibility into system activities and assists with security investigations.

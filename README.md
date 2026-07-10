@@ -1,80 +1,94 @@
-# Enterprise Linux Security Monitoring & Hardening Platform
+# Enterprise Linux Security Platform
 
-## Overview
-
-This project demonstrates the design and implementation of an enterprise-style Linux security monitoring and hardening platform using Ubuntu Server 24.04.4 LTS.
-
-The project focuses on system administration, security hardening, auditing, monitoring, and automation practices commonly used in enterprise Linux environments.
-
-## Architecture
-
-![Architecture](assets/project-architecture.png)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04.4_LTS-E95420?logo=ubuntu&logoColor=white)
+![Shell](https://img.shields.io/badge/Bash-Scripting-green?logo=gnubash)
+![Platform](https://img.shields.io/badge/Platform-ARM64-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
+## Overview
+
+This project demonstrates the deployment and security hardening of an Ubuntu Server environment following enterprise-oriented Linux administration and security practices.
+
+The project covers secure server configuration, SSH hardening, firewall configuration, intrusion prevention, Linux auditing, security assessment, log monitoring, and Bash automation.
+
+The objective is to build a secure Linux platform while documenting each implementation step and validating security controls through practical testing.
+
+---
 
 ## Objectives
 
-- Deploy a secure Ubuntu Server environment
-- Apply Linux security hardening best practices
-- Monitor authentication and system activities
-- Implement intrusion prevention
-- Configure Linux auditing
-- Automate routine security validation tasks
+- Deploy an Ubuntu Server environment
+- Establish a secure Linux baseline
+- Harden remote access with OpenSSH
+- Configure host-based firewall protection
+- Prevent brute-force attacks using Fail2Ban
+- Enable Linux auditing with auditd
+- Perform security assessment using Lynis
+- Monitor authentication and system logs
+- Automate operational security checks using Bash
+
+---
+
+## Architecture
+
+![Project Architecture](assets/project-architecture.png)
 
 ---
 
 ## Environment
 
 | Component | Details |
-|----------|---------|
-| OS | Ubuntu Server 24.04.4 LTS ARM64 |
+|-----------|---------|
+| Operating System | Ubuntu Server 24.04.4 LTS ARM64 |
 | Virtualization | UTM |
-| Host | Apple Silicon MacBook Air M2 |
-| Server Role | MON01 |
+| Host Machine | Apple Silicon MacBook Air M2 |
+| Primary Server | MON01 |
 
 ---
 
-## Implemented Features
+# Security Controls
 
-### Linux Administration
-
-- User and privilege management
-- SSH administration
-- System baseline configuration
-
-### Security Hardening
-
-- SSH Hardening
-- Root Login Restriction
-- UFW Firewall
-- Fail2Ban Intrusion Prevention
-
-### Security Auditing
-
-- Linux Audit Framework (auditd)
-- Audit Rule Configuration
-- Audit Event Analysis
-
-### Security Assessment
-
-- Lynis Security Audit
-- Hardening Recommendations
-
-### Monitoring
-
-- SSH Authentication Logs
-- journalctl
-- System Resource Monitoring
-
-### Automation
-
-- Enterprise Health Check Script
-- Security Report Generator
+| Area | Implementation |
+|------|----------------|
+| SSH Security | Root login disabled, AllowUsers configuration |
+| Firewall | UFW default deny policy with required rules |
+| Intrusion Prevention | Fail2Ban SSH protection |
+| Linux Auditing | auditd rules and event monitoring |
+| Security Assessment | Lynis system audit |
+| Log Monitoring | journalctl and authentication logs |
 
 ---
 
-## Technologies
+# Monitoring
+
+Implemented monitoring of:
+
+- SSH authentication events
+- Failed login attempts
+- Successful login events
+- User management activities
+- Audit events
+- System boot logs
+- CPU usage
+- Memory utilization
+- Disk usage
+
+---
+
+# Automation
+
+Two Bash automation scripts were developed.
+
+| Script | Description |
+|---------|-------------|
+| enterprise-health-check.sh | Displays system health and security status |
+| security-report.sh | Generates an automated security report |
+
+---
+
+# Technologies
 
 - Ubuntu Server
 - Bash
@@ -89,52 +103,83 @@ The project focuses on system administration, security hardening, auditing, moni
 
 ---
 
-## Project Structure
+# Documentation
 
-```text
-enterprise-linux-security-monitoring/
-├── docs/
-├── screenshots/
-├── scripts/
-├── diagrams/
-├── assets/
-└── README.md
-```
+Project documentation includes:
 
----
-
-## Automation Scripts
-
-| Script | Description |
-|---------|-------------|
-| enterprise-health-check.sh | Enterprise system health validation |
-| security-report.sh | Automated security report generation |
-
----
-
-## Documentation
-
-- Server Deployment
-- Linux Hardening
+- Ubuntu Server Deployment
+- Linux Baseline Configuration
 - SSH Hardening
-- Firewall Hardening
-- Fail2Ban
+- UFW Firewall Configuration
+- Fail2Ban Configuration
 - Linux Audit Framework
-- Lynis Assessment
-- Log Monitoring
-- Security Automation
+- Lynis Security Assessment
+- Security Monitoring
+- Bash Automation
+- Troubleshooting Notes
 
 ---
 
-## Skills Demonstrated
+# Key Skills Demonstrated
 
-- Linux Administration
+- Linux System Administration
 - Linux Security Hardening
+- SSH Administration
+- Host Firewall Configuration
+- Intrusion Prevention
+- Linux Auditing
+- Log Monitoring
+- Security Assessment
 - Bash Scripting
-- System Monitoring
-- Log Analysis
-- Infrastructure Security
-- Security Auditing
 - Technical Documentation
+- Git Version Control
 
 ---
+
+# Project Highlights
+
+✔ Secure Ubuntu Server deployment
+
+✔ SSH hardening and root login restriction
+
+✔ UFW firewall implementation
+
+✔ Fail2Ban intrusion prevention
+
+✔ Linux auditing with auditd
+
+✔ Security assessment using Lynis
+
+✔ Authentication and audit log monitoring
+
+✔ Automated operational health checks
+
+✔ Automated security reporting
+
+---
+
+# Lessons Learned
+
+This project provided hands-on experience in:
+
+- Deploying and securing Linux servers
+- Applying security hardening best practices
+- Monitoring authentication and audit logs
+- Investigating Linux security events
+- Validating security configurations
+- Automating administrative tasks with Bash
+- Producing structured technical documentation
+
+---
+
+# Future Improvements
+
+Potential future enhancements include:
+
+- Wazuh SIEM integration
+- Prometheus monitoring
+- Grafana dashboards
+- Docker deployment
+- Centralized log collection
+- Security alerting
+- Configuration management with Ansible

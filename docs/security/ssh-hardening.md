@@ -35,3 +35,7 @@ sshd -T | grep permitrootlogin
 Result:
 
 permitrootlogin no
+
+## Lessons Learned
+
+Disabling root login and validating SSH configuration are simple but effective controls that significantly reduce the attack surface of remote administration services.
