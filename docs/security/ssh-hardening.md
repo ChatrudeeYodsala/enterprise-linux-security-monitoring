@@ -15,21 +15,26 @@ Implemented:
 
 ## Configuration Changes
 
-Before:
+Before
 
+```text
 PermitRootLogin prohibit-password
+```
 
+After
 
-After:
-
+```text
 PermitRootLogin no
+```
 
 
 ## Verification
 
 Command:
 
-sshd -T | grep permitrootlogin
+```bash
+sudo sshd -T | grep permitrootlogin
+```
 
 
 Result:

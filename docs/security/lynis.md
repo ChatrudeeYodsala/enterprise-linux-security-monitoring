@@ -19,3 +19,7 @@ Perform a security assessment of the Ubuntu Server using Lynis.
 ## Result
 
 The system was successfully assessed, providing actionable recommendations for improving overall security posture.
+
+## Lessons Learned
+
+Security assessment tools help identify configuration weaknesses and provide recommendations for continuous hardening.
