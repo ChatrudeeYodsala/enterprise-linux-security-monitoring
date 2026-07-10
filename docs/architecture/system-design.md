@@ -13,7 +13,7 @@ This project implements an enterprise-style Linux security monitoring platform.
 
 ## Architecture
 
-(Add Architecture Diagram)
+![Architecture](assets/project-architecture.png)
 
 ## Design Goals
 
