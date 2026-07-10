@@ -39,6 +39,12 @@ The project focuses on Linux administration, security hardening, monitoring, and
 - Performance analysis
 - Security event monitoring
 
+## Security Features
+
+- SSH Hardening
+- UFW Firewall Hardening
+- Fail2Ban Intrusion Prevention
+
 ---
 
 ## Project Structure
